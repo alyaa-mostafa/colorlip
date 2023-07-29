@@ -1,0 +1,60 @@
+@media screen and (max-width:600px){
+    body .header-content h2{
+        font-size: 40px;
+    }
+    body .header-content blockquote{
+        font-size: 15px;
+        margin-bottom: 0;
+    }
+    body .caption-section h2{
+        font-size: 60px;
+        right: 5px;
+    }
+    body .text-section h3{
+        font-size:24px;
+    }
+    body .caption h2{
+        font-size: 30px;
+
+    }
+    body .caption p{
+        font-size: 16px;
+    }
+}
+@media screen and (max-width:600px) {
+body .sec5 .cards .card{
+    position: static;
+    width: 100%;
+} 
+.sec5 .over {
+display: none;
+}
+}
+@media screen and (max-width:768px){ 
+    body .sec5 .cards .card {
+        position: static;
+        margin-bottom: 0;
+       
+    } 
+    body .sec5 .over {
+    display: none;
+    }
+    body .sec5 .our-caption p{
+        font-size: 20px;
+    }
+    body .sec5 .our-caption h3{
+        font-size: 50px;
+    }
+}
+@media screen and (max-width:992px) {
+    body .sec5 .cards .card{
+        position: static;
+        margin-bottom: 0;
+    } 
+    .sec5 .over {
+    display: block;
+    }
+    }
+
+
+

@@ -1,0 +1,428 @@
+h2,h3 {
+    font-family: 'Amatic SC', cursive;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Nunito Sans', sans-serif;
+font-family: 'Playfair Display', serif;
+}
+:root{
+    --primary-color:#BCA858;
+    --second-color: #252525;
+}
+p{
+    font-family: 'Amatic SC', cursive;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Playfair Display', serif;
+}
+/* header */
+#home{
+    background-image: url(../image/16.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+.header-content h2{
+    font-size: 72px;
+    font-weight: 400;
+    line-height: 93.6px;
+    color: var(--second-color);
+}
+.header-content blockquote{
+    color: var(--second-color);
+    font-size:18px;
+    line-height:30.6px;
+    font-weight:400;
+}
+.btn button{
+    background-color: var(--primary-color);
+    padding: 8px 35px;
+    border-radius: 40px;
+    color: white;
+    font-size: 14px;
+    border: none;
+    transition: all 0.5s;
+}
+.btn button:hover{
+    background-color:var(--second-color);
+}
+/* NAVBAR */
+nav .icon{
+    transition: all 0.5s;
+    padding-left: 40px;
+    padding-right: 20px;
+}
+nav .icon:hover{
+color: var(--primary-color);
+}
+.btn-shadow button{
+    background-color: transparent;
+    padding: 8px 35px;
+    border: 1px solid #252525;
+    border-radius: 40px;
+    color: var(--second-color);
+    font-size: 14px;
+    transition: all 0.5s;
+}
+.btn-shadow button:hover{
+    background-color:var(--primary-color);
+    color: white;
+    border-color: transparent;
+    cursor: pointer;
+    box-shadow: 5px 5px 30px #DDDAD3;
+}
+nav .nav-link::before{
+    content: "";
+    background-color: var(--primary-color);
+    height: 2px;
+    width: 0%;
+    position: absolute;
+    bottom: 0;
+    left: 3px;
+    transition: width 0.4s;
+}
+.nav-link:focus,nav .nav-link:hover::before{
+    width: 90%;
+    }
+body:not(:has:target) .home-link::before,    
+body:has(.home:target) .home-link::before,
+body:has(.about:target) .about-link::before,
+body:has(.pages:target) .pages-link::before,
+body:has(.portfolio:target) .portfolio-link::before,
+body:has(.services:target) .services-link::before,
+body:has(.blog:target) .blog-link::before,
+body:has(.contact:target) .contact-link::before{
+    width: 90%;
+}
+.navbar-nav .nav-link.active:hover{
+    color: var(--primary-color);
+}
+.nav-link{
+    transition: all 0.5s;
+}
+.nav-link:hover{
+    color: var(--primary-color);
+}
+.dropdown-item{
+    color: var(--second-color);
+    transition: all 0.5s;
+}
+.dropdown-item:hover{
+    color: var(--primary-color);
+}
+/* SECTION 2 */
+
+.caption-section h2{
+    color: #BCA858;
+    font-size: 100px;
+    opacity: 0.1;
+    line-height: 100px;
+    text-transform: uppercase;
+    z-index: -1;
+    font-family: 'Playfair Display', serif;
+    bottom: -50px;
+    font-weight: 700px;
+    right: -80px;
+    padding: 40px;
+}
+.caption-section h3{
+    font-size:42px;
+    line-height:50.4px;
+    font-weight:400;
+    margin-bottom: 20px;
+}
+.section picture img{
+    box-shadow: 0 2px 40px 8px rgba(15, 15, 15, 0.15);
+    width: 85%;
+}
+.text-section h3{
+    font-size:28px;
+    line-height:36.4px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.text-section p{
+    font-size:18px;
+    line-height:27.2px;
+    padding-right: 50px;
+    margin-bottom: 50px;
+}
+.section button:hover{
+    box-shadow: 0 2px 40px 8px rgba(15, 15, 15, 0.15);
+}
+/* section 2 */
+.sec2 .card,h5{
+    transition: all 0.5s;
+}
+.sec2 .card:hover{
+    box-shadow: 0 2px 40px 8px rgba(15, 15, 15, 0.15);
+}
+.sec2 .card:hover h5{
+    color: var(--primary-color);
+}
+.sec2 .card p{
+color:#6E6E6E ;
+}
+.sec2 .caption-sec2 p{
+    color:#6E6E6E ;
+}
+.line{
+    background-color:#6E6E6E;
+    width: 100%;
+    height: 0.3px;
+    margin-top: 50px;
+}
+/* section 3 */
+.sec3{
+    background-color: #f6f9f9 ;
+}
+.bac{
+    width: 100%;
+    height: auto;
+    background-color: #ebebeb;
+}
+.sec3 img{
+    position: relative;
+    right: 20px;
+    bottom: 20px;
+}
+.caption h2{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.caption p{
+    color:#6E6E6E ;
+}
+.icon-p i{
+    color: var(--primary-color);
+    margin-right: 5px;
+}
+/* section 6 */
+.sec4 .card-group h5{
+    font-size: 22px;
+    line-height: 33px;
+font-family: 'Playfair Display', serif;
+font-weight: 400;
+transition: all 0.5s;
+}
+.sec4 .card-group:hover h5{
+    color: var(--primary-color);
+}
+.sec4 .card-group span{
+    transition: all 0.5s;
+}
+.sec4 .card-group span:hover{
+    color: var(--primary-color);
+}
+.sec4 .card-group i:hover{
+    color: var(--primary-color);
+}
+
+/* section 7 */
+
+.sec7{
+    background-color: #ebebeb;
+}
+.caption-sec7 h2{
+    font-size:48px;
+    line-height:62.4px;
+font-family: 'Playfair Display', serif;
+}
+.caption-sec7 p{
+    font-size: 18px;
+}
+.bt .bt2{
+    background-color: transparent;
+    padding: 8px 35px;
+    border: 1px solid #252525;
+    border-radius: 40px;
+    color: var(--second-color);
+    font-size: 14px;
+    transition: all 0.5s;
+}
+.bt .bt2:hover {
+    background-color:var(--primary-color);
+    color: white;
+    border-color: transparent;
+    cursor: pointer;
+    box-shadow: 5px 5px 30px #DDDAD3;
+}
+.bt .bt1{
+    background-color: var(--primary-color);
+    padding: 8px 35px;
+    border-radius: 40px;
+    color: white;
+    font-size: 14px;
+    border: none;
+    transition: all 0.5s;
+}
+.bt .bt1:hover{
+    box-shadow: 0 2px 40px 8px rgba(15, 15, 15, 0.15);
+    background-color: black;
+}
+/* footer */
+.about .pragraph{
+    margin-bottom: 30px;
+}
+.about p{
+    font-family: 'Open Sans', sans-serif;
+
+    margin-top: 20px;
+    color: #6E6E6E;
+    line-height:27.2px;
+    font-size: 18px;
+}
+.icon-media .icon{
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+.primary{
+    background-color:blue;
+}
+.info{
+    background-color: rgb(32, 115, 148);
+}
+.danger{
+    background-color: red;
+}
+.primary-2{
+    background-color: aqua;
+}
+.icon-media .icon:hover{
+    background-color: var(--primary-color);
+}
+.icon-media i{
+    font-size: 20px;
+    color: white;
+} 
+.about a{
+    text-decoration: none;
+    color: #6E6E6E;
+    font-size: 18px;
+}
+/* nav and tabs */
+.fit-content {
+    width: fit-content;
+    margin: auto;
+}
+
+.our-work .nav-link {
+    color: var(--primary-color);
+    
+}
+.our-work .content-layer{
+    overflow: hidden;
+    position: relative;
+} 
+.our-work .layer{
+    position: absolute;
+    background-color:#00000096;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.5s;
+    opacity: 0;
+}
+.content-layer h2{
+    color: var(--primary-color);
+}
+.our-work .content-layer p{
+    color: white;
+    font-size: 20px;
+} 
+.content-layer .icon{
+   font-size: 25px;
+   position: absolute;
+   bottom: 0;
+   color: white;
+} 
+.content-layer:hover .layer{
+    opacity: 1;
+}
+.content-layer img{
+    transition: scale 0.5s;
+}
+.content-layer:hover img{
+    scale: 1.1;
+}
+/* Our Eperts */
+
+.sec5 .over {
+    overflow: hidden;
+    height: 65%;}
+.sec5 .our-caption h3{
+    font-size: 40px;
+}
+.sec5 {
+    background-color: #f6f9f9;
+}
+.sec5 .our-caption p{
+    line-height: 1.7;
+    color: #6e6e6e;
+    font-size: 18px;
+    font-weight: 400;
+    padding-block:20px ;
+}
+.sec5 .cards .card{
+    position: absolute;
+    bottom: 50%;
+    margin-bottom: 150px;
+    filter: grayscale(100%);
+    width: 100%;
+}
+
+.sec5 .cards .card:hover{
+    filter: none;
+}
+.sec5 .cardbg{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: 7777;
+    opacity: 0;
+    transition: opacity 300ms;
+}
+.sec5 .cardbg:hover{
+    opacity: 1;
+    box-shadow: 5px 5px 30px #DDDAD3;
+}
+
+.sec5 .cardbg .ico{
+    font-size: 20px;
+    transition: background-color 300ms;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.sec5 .cardbg .ico:hover {
+    color: white;
+    background-color: var(--primary-color);
+
+}
+.sec5 .card:hover h4 {
+   color:  var(--primary-color);
+   
+}
